@@ -1,0 +1,304 @@
+<html>
+    <head>
+        <script>
+            document.addEventListener('contextmenu', (e) => e.preventDefault());
+            
+            function ctrlShiftKey(e, keyCode) {
+            return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+            }
+            document.onkeydown = (e) => {
+            if (
+            event.keyCode === 123 ||
+            ctrlShiftKey(e, 'I') ||
+            ctrlShiftKey(e, 'J') ||
+            ctrlShiftKey(e, 'C') ||
+            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+            )
+            return false;
+            };
+        </script>
+        <style>
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            }
+            h3 {text-align: center;}
+            h1 {text-align: center;}
+            h1 , form , h4
+            {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            }
+            .container
+            {
+            width: 100%;
+            height: 100vh;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            }
+            form
+            {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 2vw 4vw;
+            width: 90%;
+            max-width: 450px;
+            border-radius: 10px;
+            position: fixed;
+            }
+            form h1
+            {
+            color: #000000;
+            font-weight: 800;
+            margin-bottom: 20px;
+            }
+            form h3
+            {
+            color: #FF3307;
+            font-weight: 800;
+            margin-bottom: 0px;
+            font-size: 10px;
+            }
+            form input
+            {
+            border: 0;
+            border-radius: 50px;
+            margin: 10px 0;
+            padding: 20px;
+            outline: none;
+            background: #f5f5f5;
+            font-size: 16px;
+            }
+            form textarea
+            {
+            border: 0;
+            border-radius: 20px;
+            margin: 10px 0;
+            padding: 20px;
+            outline: none;
+            background: #f5f5f5;
+            font-size: 20px;
+            }
+            form button
+            {
+            padding: 15px;
+            background: #000000;
+            color: #fff;
+            font-size: 25px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            width: 150px;
+            margin: 20px auto 0;
+            border-radius: 30px;
+            border: 2px solid black
+            }
+            form button:hover
+            {
+            background-color: #fff;
+            color: #000000;
+            transition-delay: 0.1s;
+            border: 2px solid black
+            }
+            form select
+            {
+            border: 0;
+            border-radius: 50px;
+            margin: 10px 0;
+            padding: 20px;
+            outline: none;
+            background: #f5f5f5;
+            font-size: 16px;
+            }
+            input::placeholder {
+            color: #000000;
+            opacity: 1;
+            }
+            textarea::placeholder {
+            color: #000000;
+            opacity: 1;
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, user-scalable = no">
+        <title>Suggestion Portal | RPS Karnal</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Location_dot_black.svg/2048px-Location_dot_black.svg.png" type="image/icon type">
+    </head>
+    <body>
+        <div class="container">
+            <form method="post" action="mail.php">
+                <h1>Suggestion Portal</h1>
+                <input type="text" name="studentname" id="StudentName" placeholder="Student Name" required oninvalid="this.setCustomValidity('Enter Your Name')"oninput="this.setCustomValidity('')">
+                <select id="Class" name="class" required oninvalid="this.setCustomValidity('Select your Class')"oninput="this.setCustomValidity('')">
+                    <option value="" disabled selected hidden>Class
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select id="Section" name="section" required oninvalid="this.setCustomValidity('Select your Section')"oninput="this.setCustomValidity('')">
+                    <option value="" disabled selected hidden>Section
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="Medical (Foundation)">Medical (Foundation)</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Non Medical(Foundation)">Non Medical (Foundation)</option>
+                    <option value="Non Medical">Non Medical</option>
+                    <option value="Commerce">Commerce</option>
+                    <option value="Humanities">Humanities</option>
+                </select>
+                <textarea id="Suggestion" name="suggestion" rows="4" placeholder="Suggestion" required oninvalid="this.setCustomValidity('Enter Your Suggestion')"oninput="this.setCustomValidity('')"></textarea>
+                <button type="Submit" name="Submit">Submit</button>
+                <h3 style="line-height:4em;">*YOUR IP ADDRESS IS BEING TRACKED!</h3>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+            </form>
+        </div>
+        <script type="text/javascript">
+            alert("Please be Respectful while writing your Suggestions (Your IP Address is being Tracked!)");
+        </script>
+    </body>
+</html>
